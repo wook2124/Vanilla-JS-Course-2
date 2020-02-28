@@ -4,7 +4,6 @@ Nomad Coders's Vanilla JS Course 2
 ## Demo Link
 
 ## Demo Video
-# ![](demo.gif)
 
 ## Project Description 
 This is a paint site. Enjoy your drawing!  
