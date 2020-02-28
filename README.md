@@ -1,5 +1,5 @@
-# Vanilla_JS_Course_2
-Nomad Coders's Vanilla JS Course 2
+# Vanilla JS Course 2
+- Nomad Coders's Vanilla JS Course 2
 
 ## Demo Link
 
