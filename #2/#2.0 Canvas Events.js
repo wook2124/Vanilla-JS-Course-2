@@ -43,12 +43,13 @@ if (canvas) {
 }
 
 // mouseleave는 canvas에서 완전히 나온 상황이라 function에 추가할 기능이 없지만
-// mouseup은 canvas 안에서의 작동이기 때문에 function에 추가할게 있으니 stopPainting만 호출해옴!
+// mouseup은 canvas 안에서의 작동이기 때문에 function에 추가할게 있을 수도 있음
+// 때문에 function onMouseUp(event)는 일단 살려둠
 const canvas = document.getElementById("jsCanvas");
 
 let painting = false;
 
-function stopPainting(event) {
+function stopPainting() {
   painting = false;
 }
 
