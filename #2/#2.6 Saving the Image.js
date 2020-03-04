@@ -1,3 +1,43 @@
+// 오른쪽 마우스로 저장하는 것을 막는 방법
+// 오른쪽 마우스를 클릭해서 나오는 것들이 contextmenu임
+function handleRightClick(event) {
+  event.preventDefault();
+}
+
+if (canvas) {
+  canvas.addEventListener("contextmenu", handleRightClick);
+}
+
+
+// SAVE 버튼으로 저장하는 기능 만들기
+<button id="jsSave">Save</button>;
+
+const saveBtn = document.getElementById("jsSave");
+
+if (saveBtn) {
+  saveBtn.addEventListener("click", handleSaveClick);
+}
+// HTMLCanvasElement.toDataURL()
+// 기본값이 PNG로 설정된 type parameter에 의해 지정된 포맷의 이미지 표현을 포함한 data URL을 반환함
+function handleSaveClick() {
+  const image = canvas.toDataURL("image/png");
+}
+
+
+// href는 anchor('a') 태그의 attribute(속성)이 되고
+// SAVE 버튼을 클릭하면 이 attribute는 browser에게
+// 이 link로 가는 대신 URL(그림)을 다운로드 하라고 지시함
+// href는 image(URL)이 되야하고, download는 다운할 때 나올 이름표시
+function handleSaveClick() {
+  const image = canvas.toDataURL("image/png");
+  const link = document.createElement("a");
+  link.href = image;
+  link.download = "PaintJS";
+  link.click();
+}
+
+
+// 최종 코드
 const canvas = document.getElementById("jsCanvas");
 const ctx = canvas.getContext("2d");
 const colors = document.getElementsByClassName("jsColor");

@@ -11,6 +11,7 @@ function handleColorClick(event) {
   ctx.fillStyle = color;
 }
 
+
 // strokeStlye과 fillStyle의 기본값(default value) 모두 #2c2c2c로 갖게하고,
 // canvas의 size 역시 기본값으로 700을 갖게함
 const INITIAL_COLOR = "#2c2c2c";
