@@ -1,3 +1,45 @@
+// fillRect(x, y, width, height) 사용하기
+// strokeStyle말고 fillStyle을 사용해서 fillRect으로 채울 때의 색깔을 정해봄
+ctx.fillStyle = "green";
+ctx.fillRect(50, 50, 50, 50);
+
+
+// color를 click할 경우에 fillStyle도 그 color가 되게끔 함
+function handleColorClick(event) {
+  const color = event.target.style.backgroundColor;
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+}
+
+// strokeStlye과 fillStyle의 기본값(default value) 모두 #2c2c2c로 갖게하고,
+// canvas의 size 역시 기본값으로 700을 갖게함
+const INITIAL_COLOR = "#2c2c2c";
+ctx.strokeStyle = "INITIAL_COLOR";
+ctx.fillStyle = "INITIAL_COLOR";
+
+const CANVAS_SIZE = 700;
+canvas.width = CANVAS_SIZE;
+canvas.height = CANVAS_SIZE;
+
+
+// canvas를 click할 경우에 fillRect로 인해 canvas가 선택한 color로 채워짐
+function handleCanvasClick() {
+  ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+}
+
+if (canvas) {
+  canvas.addEventListener("click", handleCanvasClick);
+}
+// painting만 하려해도 filling으로 전부 채워지기 때문에
+// filling이 true가 되면 filling mode가 되고 fillRect가 실행됨
+function handleCanvasClick() {
+  if (filling) {
+    ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+  }
+}
+
+
+// 최종 코드
 const canvas = document.getElementById("jsCanvas");
 const ctx = canvas.getContext("2d");
 const colors = document.getElementsByClassName("jsColor");
