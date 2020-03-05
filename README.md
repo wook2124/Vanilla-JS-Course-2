@@ -2,6 +2,7 @@
 - Nomad Coders's Vanilla JS Course 2
 
 ## Demo Link
+https://wook2124.github.io/Vanilla_JS_Course_2/
 
 ## Demo Video
 
