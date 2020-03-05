@@ -5,6 +5,7 @@
 https://wook2124.github.io/Vanilla_JS_Course_2/
 
 ## Demo Video
+![](demo.gif)
 
 ## Project Description 
 This is a paint site. Refer to feature below for functions, and enjoy your drawing!  
