@@ -1,8 +1,8 @@
 # Vanilla JS Course 2
-- Nomad Coders's Vanilla JS Course 2
+Nomad Coders's Vanilla JS Course 2
 
 ## Demo Link
-[Vanilla JS Course 2](https://wook2124.github.io/Vanilla_JS_Course_2/)
+- [Vanilla JS Course 2](https://wook2124.github.io/Vanilla_JS_Course_2/)
 
 ## Demo Video
 ![](demo.gif)
