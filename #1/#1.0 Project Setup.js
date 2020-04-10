@@ -1,6 +1,8 @@
-// https://github.com/JoyDaheeCha/paintjs 만들기
+// https://github.com/JoyDaheeCha/paintjs
 // https://joydaheecha.github.io/paintjs/ 
-// index.html 만들기
+
+
+<!-- index.html 만들기-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +16,7 @@
     <script src="app.js"></script>
   </body>
 </html>
+
 
 // 터미널(git)을 이용해서 변경사항 바로 저장하기(GitHub)
 git add .
