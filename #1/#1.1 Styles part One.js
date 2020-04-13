@@ -1,8 +1,9 @@
 // https://meyerweb.com/eric/tools/css/reset/ 사이트에서 reset.css 가져오기
-// 그리고 style.css로 import함
-// index.html에 canvas 추가해줌
+
+// index.html에 canvas 추가하고
 <canvas id="jsCanvas" class="canvas"></canvas>
 
+// style.css로 reset.css를 import하고 꾸며줌
 @import "reset.css";
 
 body {
@@ -23,8 +24,8 @@ body {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-// div.controls_color*9 으로 한번에 9개의 코드를 작성함(9개의 color)
-// index.html에 9개의 색을 입혀줌
+
+// div.controls_color*9 으로 한번에 9개의 코드를 작성함
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,29 +54,20 @@ body {
   </body>
 </html>
 
-// controls_colors class 안에있는 controls_color class css를 꾸며줌
-.controls_colors .controls_color {
-  width: 50px;
-  height: 50px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
 
-// 9개의 색깔의 행을 일렬로 만들어줌
+// .(class)controls 안의 .(class) controls_colors를 꾸며줌
+// 9개의 색깔의 행을 flex로 일렬로 만들고
 .controls .controls_colors {
   display: flex;
 }
 
-// 마무리로 controls class 전체를 60px정도 띄어주고
-// border-radius는 width(폭)의 반인 25px로 해줘서 동그랗게 만들어주고
-// 커서는 갖다대면 pointer로 나오게끔 해줌!
+// .(class)controls의 margin-top을 60px정도 띄어주고
 .controls {
   margin-top: 60px;
 }
 
-.controls .controls_colors {
-  display: flex;
-}
-
+// border-radius를 width(폭)의 반인 25px로 동그랗게 만들고
+// cursor를 갖다대면 pointer로 바뀌게함
 .controls_colors .controls_color {
   width: 50px;
   height: 50px;
