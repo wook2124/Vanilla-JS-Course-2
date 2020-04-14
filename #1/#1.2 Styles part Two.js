@@ -1,13 +1,11 @@
-// controls class 안에 Fill, Save button만들기
+// .(class)controls 안에 Fill, Save button 만들기
 <div class="controls_btns">
 <button id="jsMode">Fill</button>
 <button id="jsSave">Save</button>
 </div>
 
-// controls 전체 css 꾸미기
-// flex는 1열로 정리, column은 각각의 열로 구분, 
-// 마지막으로 center까지 적어주면 가운데에 모이게됨
-// 그리고 그 안에있는 controls_btns class를 30px 밑에서 띄워줌
+
+// style.css 꾸미기
 .controls {
     margin-top: 60px;
     display: flex;
@@ -18,8 +16,7 @@
 .controls .controls_btns {
     margin-bottom: 30px;
 }
-
-// all unset으로 다 초기화 시킨 뒤 여러가지 설정을 만짐
+// all: unset으로 초기화 시킨 뒤 여러가지 설정을 만짐
 // button:active는 button을 누르게 되면 active(동적)으로 움직이는 것을 뜻함
 .controls_btns button {
     all: unset;
@@ -41,13 +38,10 @@
     transform: scale(0.98);
   }
 
-// Fill과 Save 버튼 위에 Brush의 크기를 조절해줄 range(범위창)을 만듦
-<div class="controls_range">
-<input type="range" id="JsRange" />
-</div>
 
-// default(기본값 value) 2.5부터 시작해서, 
-// min(최소) 0.1부터 max(최대) 5.0까지 0.1의 step(by step)으로 움직이는 input range 완성!
+// Fill과 Save 버튼 위에 Brush의 크기를 조절해줄 range(범위창)을 만들기
+// default(기본값 value) 2.5부터 시작해서
+// min(최소) 0.1부터 max(최대) 5.0까지 0.1의 step(by step)으로 움직이는 input range 완성
 <div class="controls_range">
 <input
   type="range"
