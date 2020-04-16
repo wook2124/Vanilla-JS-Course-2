@@ -1,4 +1,4 @@
-// canvas에 마우스를 가져가면 인식할 수 있도록 javascript 작성하기
+// canvas에 마우스를 가져가면 인식할 수 있게함
 const canvas = document.getElementById("jsCanvas");
 
 function onMouseMove(event) {
@@ -9,18 +9,19 @@ if (canvas) {
   canvas.addEventListener("mousemove", onMouseMove);
 }
 
-// canvas안의 마우스 위치 좌표값인 offsetX, Y 가져오기
-// clientX, Y는 윈도우 안에 있는 마우스 위치 좌표값
+
+// canvas안의 마우스 위치 좌표값인 offsetX, offsetY 가져오기
 function onMouseMove(event) {
     const x = event.offsetX;
     const y = event.offsetY;
     console.log(x, y);
 }
 
-// canvas에 마우스를 click했을 때 동작할 mousedown을 만들어줌
-// 반대로 mouse를 땟을 때 painting이 false 되도록 mouseup도 만들어줌
-const canvas = document.getElementById("jsCanvas");
 
+// canvas에 마우스를 click했을 때 동작할 mousedown을 만들고
+// 반대로 mouse를 땟을 때 painting이 false 되도록 mouseup도 만듦
+const canvas = document.getElementById("jsCanvas");
+// let으로 painting이 event에 따라 변화되게 정의함
 let painting = false;
 
 function onMouseMove(event) {
@@ -42,9 +43,8 @@ if (canvas) {
   canvas.addEventListener("mouseup", onMouseUp);
 }
 
-// mouseleave는 canvas에서 완전히 나온 상황이라 function에 추가할 기능이 없지만
-// mouseup은 canvas 안에서의 작동이기 때문에 function에 추가할게 있을 수도 있음
-// 때문에 function onMouseUp(event)는 일단 살려둠
+
+// 최종 코드
 const canvas = document.getElementById("jsCanvas");
 
 let painting = false;
@@ -65,7 +65,8 @@ function onMouseDown(event) {
 function onMouseUp(event) {
   stopPainting();
 }
-
+// mouseup은 canvas 안에서 mouse를 땠을 때 작동
+// mouseleave는 canvas에서 mouse가 나온 상황에 작동
 if (canvas) {
   canvas.addEventListener("mousemove", onMouseMove);
   canvas.addEventListener("mousedown", onMouseDown);
