@@ -6,7 +6,7 @@ const colors = document.getElementsByClassName("jsColor");
 function handleColorClick(event) {
   console.log(event.target.style);
 }
-// Array.from() - ()안에 있는 object(객체)로부터 Array를 만듦
+// Array.from() - ()안에 있는 object(객체)를 Array로 묶어줌
 // Array.from()으로 colors를 Array(배열)로 묶고
 // forEach로 각각의 color에 "click" event가 발생하면 들을 수 있도록 할당함
 Array.from(colors).forEach(color =>
