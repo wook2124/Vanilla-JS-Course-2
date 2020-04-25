@@ -8,7 +8,7 @@ function handleColorClick(event) {
 }
 // Array.from() - ()안에 있는 object(객체)를 Array로 묶어줌
 // Array.from()으로 colors를 Array(배열)로 묶고
-// forEach로 각각의 color에 "click" event가 발생하면 들을 수 있도록 할당함
+// forEach로 각각의 color에 "click" event가 발생하면 알 수 있도록 addEventListener을 설정
 Array.from(colors).forEach(color =>
   color.addEventListener("click", handleColorClick)
 );
