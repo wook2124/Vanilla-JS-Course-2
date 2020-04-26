@@ -1,6 +1,7 @@
-// if문을 사용해서, range에 대해서 function을 만들어서 event가 발생하는 것에 대해 출력해보기
+// if문으로 range에 event가 발생할 때마다 handleRangeChange function 실행
+// bar를 움직일때마다 target의 value 값이 변하는 것을 출력함
 function handleRangeChange(event) {
-  console.log(event);
+  console.log(event.target.value);
 }
 
 if (range) {
@@ -8,28 +9,22 @@ if (range) {
 }
 
 
-// bar를 움직일때마다 target의 value 값이 변하는 것이 출력됨
-function handleRangeChange(event) {
-  console.log(event.target.value);
-}
-
-
-// default value(기본값, 2.5)에서 ctx.lineWidth의 size가 bar를 움직이면 변경될 수 있도록 override(재정의)해줌
+// default value(기본값, 2.5)에서 ctx.lineWidth의 size가 
+// bar의 움직임에 따라 변경될 수 있도록 override(재정의)함
 function handleRangeChange(event) {
   const size = event.target.value;
   ctx.lineWidth = size;
 }
 
 
-// jsMode - Fill을 누르면 전체 색상을 바꿔줄 수 있는 Mode
+// jsMode - Fill을 누르면 전체 색상을 바꿔줄 수 있는 Mode를 만들고
 const mode = document.getElementById("jsMode");
-
-
-// painting과 동일하게 filling 역시 처음에는 false로 default value(기본값)을 설정해서 painting mode로 시작해줌
+// painting과 동일하게 filling 역시 처음에는 false로 default value(기본값)을 설정함
 let filling = false;
-// click event가 발생해서 handleModeClick function이 기능하고
-// if filling ===(equal) true라면(filling = false 상태인 painting mode이면) mode(button)에 Fill text를 채우고
-// 반대로 filling = true로 filling mode이면 Paint text를 채움
+// "click" event로 handleModeClick function이 실행되고
+// if filling ===(equal) true라면(filling = false 상태인 painting mode면)
+// mode(button)을 Fill text를 채우고
+// else면 filling = true로 "Paint" text로 바꿔줌
 function handleModeClick() {
   if (filling === true) {
     filling = false;
@@ -43,7 +38,7 @@ function handleModeClick() {
 if (mode) {
   mode.addEventListener("click", handleModeClick);
 }
-// 추가로 fill, paint 둘 다 소문자로 적어도 대문자로 변형됨
+// 추가로 fill, paint 둘 다 소문자로 적어도 대문자로 변형되도록 설정함
 text-transform: uppercase;
 
 
