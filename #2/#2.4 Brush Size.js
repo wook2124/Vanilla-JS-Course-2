@@ -22,9 +22,9 @@ const mode = document.getElementById("jsMode");
 // painting과 동일하게 filling 역시 처음에는 false로 default value(기본값)을 설정함
 let filling = false;
 // "click" event로 handleModeClick function이 실행되고
-// if filling ===(equal) true라면(filling = false 상태인 painting mode면)
-// mode(button)을 Fill text를 채우고
-// else면 filling = true로 "Paint" text로 바꿔줌
+// if filling ===(equal) true라면, 즉 filling = false 상태인 <Painting Mode>면
+// mode(button)을 "FILL" text로 채우고
+// else면 filling = true로 <Filling Mode>가 되고 mode(button)을 "PAINT" text로 바꿔줌
 function handleModeClick() {
   if (filling === true) {
     filling = false;
