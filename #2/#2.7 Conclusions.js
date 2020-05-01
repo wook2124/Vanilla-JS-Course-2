@@ -8,7 +8,7 @@
 // HTML 요소 공부하기
 
 
-// Clear 버튼 추가하기
+// Clear Button 추가하기
 <button id="jsClear">Clear</button>
 
 const saveBtn = document.getElementById("jsSave");
