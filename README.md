@@ -12,8 +12,8 @@ Nomad Coders's Vanilla JS Course 2 `2020.02.28. ~ 2020.03.04.`
 
 ## Project Description 
 
-This is a paint site. Refer to feature below for functions, and enjoy your drawing!  
-그림을 그릴 수 있는 웹페이지입니다. 기능은 아래의 feature를 참고해주세요.
+This is a paint site. Refer to the `Feature` below for the functions and enjoy your drawing!  
+그림을 그릴 수 있는 웹페이지입니다. 기능들은 아래 `Feature`를 참고해주세요.
 
 ### `Feature` 
 
