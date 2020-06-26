@@ -1,6 +1,7 @@
 # Vanilla JS Course 2
 
-Nomad Coders's Vanilla JS Course 2 `2020.02.28. ~ 2020.03.04.`
+Nomad Coders's Vanilla JS Course 2  
+`2020.02.28. ~ 2020.03.04.`
 
 ## Demo Link
 
@@ -27,7 +28,7 @@ This is a paint site. Refer to the `Feature` below for the functions and enjoy y
 ## Customization: How to run this project
 
 Very simple. Click [Vanilla JS Course 2](https://wook2124.github.io/Vanilla_JS_Course_2/) and Enjoy!  
-위 링크를 클릭하고 사용하면 됩니다.
+[Vanilla JS Course 2](https://wook2124.github.io/Vanilla_JS_Course_2/) 클릭하고 사용하면 됩니다.
 
 ## What I used for this project 
 
