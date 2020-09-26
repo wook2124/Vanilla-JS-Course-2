@@ -34,4 +34,4 @@ Very simple. Click [Vanilla JS Course 2](https://wook2124.github.io/Vanilla_JS_C
 
  - [X] HTML
  - [X] CSS
- - [X] Vanilla JS
+ - [X] JavaScript
